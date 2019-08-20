@@ -1,0 +1,120 @@
+{
+  "phones": [
+    {"key": "tel:", "value": "905-953-9044"},
+    {"key": "fax:", "value": "905-954-1113"}
+  ],
+  "addresses": [
+    {"title": "Newmarket", "address": ["16700 Bayview Ave", "Suite B-100", "T:905-953-9044", "F:905-954-1113"]},
+    {"title": "Markham", "address": ["28 South Unionville", "Unit 2128", "T:289-301-6622", "F:289-301-6621"]},
+    {"title": "Toronto", "address": ["4949 Bathurst St", "Suite 210", "T:416-221-9001", "F:416-221-0094"]}
+  ],
+  "XRaychest": [
+    {"label": "chest PA", "name": "chestPA"},
+    {"label": "chest PA&LAT", "name": "chestPA&LAT"},
+    {"label": "sternum", "name": "sternum"}
+  ],
+  "XRaychestRL": [
+    {"label": "Ribs & Chest PA", "name": "ribs&chestPA"},
+    {"label": "Stemoclavicular", "name": "stemoclavicularJoints"}
+  ],
+  "XRayabdomen": [
+    {"label": "KUB (1 View)", "name": "kub1view"},
+    {"label": "Acute (2 Views)", "name": "acute2views"}
+  ],
+  "XRayheadNeck": [
+    {"label": "soft tissue neck", "name": "softTissueNeck"},
+    {"label": "skull", "name": "skull"},
+    {"label": "sinuses", "name": "sinuses"},
+    {"label": "orbits", "name": "obits"},
+    {"label": "MRI", "name": "MRI"},
+    {"label": "Facial Bones", "name": "facialBones"},
+    {"label": "nose", "name": "nose"},
+    {"label": "mandible", "name": "mandible"},
+    {"label": "T.M. Joints", "name": "TMjoints"},
+    {"label": "adenoids", "name": "adenoids"}
+  ],
+  "XRayupperExtremitiesRL": [
+    {"label": "shoulder", "name": "shoulder"},
+    {"label": "clavicle", "name": "clavicle"},
+    {"label": "A.C. Joints", "name": "ACJoints"},
+    {"label": "scapula", "name": "scapula"},
+    {"label": "humerus", "name": "humerus"},
+    {"label": "elbow", "name": "elbow"},
+    {"label": "forearm", "name": "forearm"},
+    {"label": "wrist", "name": "wrist"},
+    {"label": "scaphoid", "name": "scaphoid"},
+    {"label": "hand", "name": "hand"},
+    {"label": "fingers", "name": "fingers"}
+  ],
+  "XRaylowerExtremitiesRL": [
+    {"label": "hip", "name": "hip"},
+    {"label": "femur", "name": "femur"},
+    {"label": "knee", "name": "knee"},
+    {"label": "tibia&Fibula", "name": "tibia&Fibula"},
+    {"label": "ankle", "name": "ankle"},
+    {"label": "foot", "name": "foot"},
+    {"label": "calcaneus", "name": "calcaneus"},
+    {"label": "toes", "name": "toes"}
+  ],
+  "XRayspinePelvis": [
+    {"label": "cervical", "name": "cervical"},
+    {"label": "thoracic", "name": "thoracic"},
+    {"label": "lumbosacral", "name": "lumbosacral"},
+    {"label": "sacrum&Coccyx", "name": "sacrum&Coccyx"},
+    {"label": "sacro-lliac joints", "name": "sacroLliacJjoints"},
+    {"label": "pelvis&Hips", "name": "pelvis&Hips"},
+    {"label": "calcaneus", "name": "calcaneus"},
+    {"label": "toes", "name": "toes"}
+  ],
+  "XRayskeletalSurvey": [
+    {"label": "metastatic series", "name": "metastaticSeries"},
+    {"label": "bone age", "name": "boneAge"}
+  ],
+  "MusculupperExtremitiesRL": [
+    {"label": "shoulder", "name": "shoulder2"},
+    {"label": "arm", "name": "arm2"},
+    {"label": "elbow", "name": "elbow2"},
+    {"label": "forearm", "name": "forear2"},
+    {"label": "wrist", "name": "wrist2"},
+    {"label": "hand", "name": "hand2"}
+  ],
+  "MuscullowerExtremitiesRL": [
+    {"label": "hip", "name": "hip"},
+    {"label": "thigh", "name": "thigh"},
+    {"label": "knee", "name": "knee"},
+    {"label": "calf", "name": "calf"},
+    {"label": "ankle", "name": "ankle"},
+    {"label": "achilles tendon", "name": "achillesTendon"},
+    {"label": "foot", "name": "foot"}
+  ],
+  "ultrasoundGeneral": [
+    {"label": "abdomen", "name": "abdomen"},
+    {"label": "pelvic (incl. transvaginal when indicated)", "name": "pelvic"},
+    {"label": "testes/Scrotum", "name": "testes/Scrotum"},
+    {"label": "hernia", "name": "hernia"},
+    {"label": "kidney+/-Bladder", "name": "kidney+/-Bladder"},
+    {"label": "thyroid", "name": "thyroid"},
+    {"label": "face/neck", "name": "face/neck"},
+    {"label": "soft tissue", "name": "sofTissue"},
+    {"label": "other", "name": "other3"}
+  ],
+  "ultrasoundObstetrical": [
+    {"label": "nuchal translucency (11-13 wks+4 days)", "name": "nuchalTranslucency"},
+    {"label": "U/S for dating", "name": "U/SforDating"},
+    {"label": "anatomic", "name": "anatomic"},
+    {"label": "LMP", "name": "LMP"}
+  ],
+  "vascularUpperExtremity": [
+    {"label": "arterial arms", "name": "arterialArms4"},
+    {"label": "venous arms", "name": "venousArms4"},
+    {"label": "diabetic foot screening (risk assessment)", "name": "diabeticFootScreening4"},
+    {"label": "aorta", "name": "aorta4"},
+    {"label": "carotid duplex", "name": "carotidDuplex4"},
+    {"label": "echocardiogram", "name": "echocardiogram4"}
+  ],
+  "vascularLowerExtremity": [
+    {"label": "arterial arms", "name": "arterialArms5"},
+    {"label": "venous arms", "name": "venousArms5"},
+    {"label": "vascular screening (carotid, aorta, & legs)", "name": "vascularScreening5"}
+  ]
+}

@@ -1,0 +1,25 @@
+extends static/pug/template
+include components/components
+
+block variables
+	- var title = 'Canadian Vascular Laboratories'
+	- var description = 'description'
+	- var keywords = 'keywords'
+
+block content
+
+	div.page__wrapper
+		//- +preloader
+		//- +pagination
+		+header
+		+main
+		//- div#fullpage
+		//- 	+section-first-screen
+		//- 	+section-guarantees
+		//- 	+section-services
+		//- 	+section-steps    
+		//- 	+section-calculator  
+		//- 	+section-works
+		//- 	+section-order
+		//- 	+section-contacts
+		//- 	+footer

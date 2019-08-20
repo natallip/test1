@@ -1,0 +1,18 @@
+mixin svg (name, mod)
+	- mod = mod || ' '
+		svg(class="icon icon-" + name + ' ' + mod)
+			use(xlink:href="css/symbol/sprite.svg#" + name)
+mixin item (item)
+	label.form__label.form__label--box(for= item.name)
+		input.form__check(type="checkbox" name= item.name id= item.name).
+		.form__check-box
+		span.form__label-text= item.label
+mixin item2 (item)
+	.form__labels-wrap
+		label.form__label--box2(for= item.name+"-R")
+			input.form__check(type="checkbox" name= item.name+"-R" id= item.name+"-R")
+			.form__check-box.form__check-box2
+		label.form__label--box2(for= item.name+"-L")
+			input.form__check(type="checkbox" name= item.name+"-L" id= item.name+"-L")
+			.form__check-box.form__check-box2
+		span.form__label-text.form__label-text2= item.label				

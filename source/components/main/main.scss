@@ -1,0 +1,360 @@
+.address {
+  width: 27%;
+  display: inline-flex;
+  margin: 0 0 0 37px;
+  padding: 0;
+  position: relative;
+  &__title {
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 23px;
+  }
+  &__info {
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    line-height: 28px;
+  }
+}
+.form {
+  &__section {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col-74 {
+    width: 74%;
+  }
+  &__col-60 {
+    width: 60%;
+  }
+  &__col-56 {
+    width: 56%;
+  }
+  &__col-54 {
+    width: 54%;     
+  }
+  &__col-50 {
+    width: 50%;
+  }
+  &__col-44 {
+    width: 44%; 
+    padding-right: 12px;   
+  } 
+  &__col-43 {
+    width: 43%;       
+  } 
+  &__col-30 {
+    width: 30%;      
+  }  
+  &__col-25 {
+    width: 25%;
+  }
+  &__col-24 {
+    width: 24%;
+  }  
+  &__col-22 {
+    width: 22%;
+  }
+  &__col-23 {
+    width: 23%;
+  }
+  &__col-20 {
+    width: 20%;
+  }
+  &__col-top {
+    margin-top: 73px;
+  }
+  &__col-title {
+    font-weight: 700;
+    text-transform: capitalize;
+    &-pl {
+      padding-left: 40px;
+    }
+    &-pn {
+      padding-left: 10px;
+    }
+    &-RL {
+      padding-left: 15px;
+      word-spacing: 8px;
+    }
+    &--notice {
+      font-style: italic;
+      text-align: center;
+    }
+    &--center {
+      text-align: center;
+    }
+  }
+  &__check {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    &:checked + .form__check-box {
+      background: url("/images/check.svg") no-repeat center/15px;
+    }
+    &:focus + .form__check-box {
+      border: 2px solid #3b86e9;
+    }
+    &:checked:focus + .form__check-box {
+      border: 2px solid #000;
+    }
+  }
+  &__check-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px; 
+    border: 2px solid $text;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  &__check-box2 {
+    left: -1px;
+    top: -1px;
+  }
+  &__check-box-address {
+    left: -37px;
+  }
+  &__fieldset {
+    padding: 0;
+    border-radius: 15px;
+    border: 2px solid $text;
+    overflow: hidden;   
+  }
+  &__fieldset--address {
+    padding: 0;
+    border: none;
+    background: #fff; 
+    border-radius: 0;       
+  }
+  &__fieldset--patient {
+    margin-bottom: 5px;
+  }
+  &__fieldset--scroll {
+    .form__textarea {
+      overflow-y: auto; 
+      height: 126px;          
+    }
+  }
+  &__fieldset--doubleBorder {
+    border: 6px double $text;
+    margin-top: 5px;
+  }
+  &__fieldset--vascular {
+    .form__row {
+      border-bottom: none;
+    }    
+  }
+  &__fieldset--appointment {
+    margin-bottom: 5px;
+  }
+  &__fieldset--by {
+    .form__label-text {
+      min-width: 220px;
+    }
+  }
+  &__legend {
+    background-color: $text;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    border: 2px solid $text;    
+    padding: 0px 18px;
+    letter-spacing: 0.4px;  
+    position: relative;  
+    border-radius: 15px 15px 0 0;    
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $text;
+    &:last-child {
+      border-bottom: none;
+      //border-radius: 0 0 15px 15px;
+    }
+  }  
+  &__row--3td {
+    .form__label:first-child {
+      width: 44%;      
+    }
+    .form__label:nth-child(2) {
+      width: 31%;            
+    }
+    .form__label:last-child {
+      width: 20%;
+    }
+  }
+  &__row--2td {
+    .form__label:first-child {
+      width: 70%;      
+    }
+    .form__label:last-child {
+      width: 30%;
+    }
+  }
+  &__labels-wrap {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+  &__label {
+    display: block;
+    width: 100%;
+    position: relative;
+    text-transform: uppercase;
+    margin-left: 10px;
+    &-bottom {
+      position: absolute;
+      bottom: -30px;
+      left: 10px;
+    }
+    &--small {
+      font-size: 14px;
+    }
+  }
+  &__label--border {
+    border-right: 2px solid $text;
+  }
+  &__label--box {
+    display: flex;
+    padding-right: 0;
+    margin-bottom: 7px;
+    span {
+      flex-shrink: 0;
+    }
+  }
+  &__label--box2 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    padding-right: 0;
+    flex-grow: 0; 
+  }
+  &__label-inline {
+    display: inline-flex;
+    padding-right: 0;
+    width: 50px;
+  }
+  &__label-col {
+    display: inline-flex;
+    height: 50px;
+    width: 25px;
+    margin-right: 10px;
+    margin-left: -2px;
+    .form__label-text {
+      margin: 0 0 0 5px;
+    }
+    .form__check-box {
+      top: 25px;
+    }
+  }
+  &__label-dark {
+    display: inline-block;
+    background-color: $text;
+    color: #fff;
+    margin-right: 10px;
+    padding: 5px 5px 0px;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  &__label-text {
+    text-transform: capitalize;
+    margin-left: 35px;
+    max-width: 150px;
+    line-height: 22px;
+    &--accent {
+      font-weight: 700;
+      max-width: 100%;
+    }
+  }
+  &__label-text2 {
+    margin-left: -2px;
+  }
+  &__label--other {
+    margin-top: 20px;
+  }
+  &__input {
+    width: 100%;
+    background-color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 2px 15px;
+    border: none;
+  }  
+  &__textarea {
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 30px;
+    display: block;
+    border: none;
+    padding: 2px 15px;
+    font-size: 24px;
+    font-weight: 700;
+    &--other {
+      border: 2px solid $text;
+      height: 238px;
+      width: 213px;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      background-color: transparent;
+      border-radius: 15px 0 15px 0;
+      padding-top: 44px;
+      overflow: hidden;
+    }
+  }
+  &__notice {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-align: center;
+  }
+  &__descr {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-top: 5px;
+    span {
+      display: inline-block;
+      margin-right: 5px; 
+      text-transform: lowercase;     
+    }
+  }
+  &__img-hand {
+    width: 135px;
+    margin-left: 35px;
+  }
+  &__img-foot {
+    width: 110px;
+    margin-left: 38px;
+  }
+  &__img-breast {
+    width: 200px;
+    margin-left: 53px;    
+  }
+  &__text-attention {
+    margin-top: 10px;
+  }
+  &__text-attention--italic {
+    font-style: italic;
+    margin-top: 5px;
+  }
+  &__wrap-middle {
+    .form__col-title {
+      text-align: center;
+    }
+  }
+  &__label-wrap {
+    margin-left: 100px;
+  }
+}

@@ -1,0 +1,203 @@
+mixin main
+	.container
+		main
+			h1.title Canadian Vascular Laboratories
+			form(action="")
+				.form__section
+					.form__col-54
+						fieldset.form__fieldset.form__fieldset--address
+							each item in data.addresses
+								label.address
+									input.form__check(type="radio" name="address" value= item.title)
+									.form__check-box.form__check-box-address 
+									.address__col
+										.address__title= item.title
+										.address__info
+											each key in item.address
+												div= key
+						fieldset.form__fieldset.form__fieldset--patient
+							legend.form__legend Patient information
+							.form__row
+								label.form__label.form__label--small(for="user")
+									|Last name, first name
+									input.form__input(type="text" name="user" id="user")
+							.form__row
+								label.form__label.form__label--small(for="address")
+									|Address
+									input.form__textarea(name="address" id="address")
+							.form__row.form__row--3td
+								label.form__label.form__label--border.form__label--small(for="telephone")
+									|Telephone
+									textarea.form__textarea(name="telephone" id="telephone")
+								label.form__label.form__label--border.form__label--small(for="birth")
+									|Date of birth
+									input.form__input(type="text" name="birth" id="birth")
+								label.form__label.form__label--small(for="sex")
+									|Sex
+									input.form__input(type="text" name="sex" id="sex")
+							.form__row.form__row--2td
+								label.form__label.form__label--border.form__label--small(for="cardNumber")
+									|Health card number
+									input.form__input(type="text" name="cardNumber" id="cardNumber")
+								label.form__label.form__label--small(for="cardCode")
+									|Version code
+									input.form__input(type="text" name="cardCode" id="cardCode")
+						fieldset.form__fieldset.form__fieldset--scroll
+							legend.form__legend Clinical information
+							textarea.form__textarea(name="clinicalInfo" id="clinicalInfo" rows="5")
+					.form__col-44.form__col-top
+						fieldset.form__fieldset.form__fieldset--appointment
+							legend.form__legend Appointment
+							.form__row.form__row--2td
+								label.form__label.form__label--small(for="appointment")
+									span.form__label-bottom Appointment
+									textarea.form__textarea(name="appointment" id="appointment" rows=2)
+								label.form__label(for="time")
+									span.form__label-bottom Time
+									input.form__input(type="text" name="time" id="time")
+							p.form__notice Missed appointments will result in a scheduling fee 	
+						fieldset.form__fieldset.form__fieldset--scroll
+							legend.form__legend Referring physician
+							textarea.form__textarea(name="referringPhysician" id="referringPhysician" rows="5")
+						fieldset.form__fieldset.form__fieldset--doubleBorder
+							label.form__label.form__label--box(for="signature")
+								span.form__label-dark Signature
+								input.form__input(type="text" name="signature" id="signature")
+							.form__descr 
+								|Physician's stamp
+								br
+								span or
+								|print name
+							.form__row
+								label.form__label.form__label--box(for="billing")
+									span.form__label-dark Billing #
+									input.form__input(type="text" name="billing" id="billing")
+							label.form__label.form__label--box(for="copyTo")
+								span Copy to
+								input.form__input(type="text" name="copyTo" id="copyTo")
+				.form__section
+					.form__col-74
+						fieldset.form__fieldset
+							legend.form__legend Digital X-Ray -WALk-IN
+							.form__row
+								.form__col-30
+									.form__col-title.form__col-title-pl Chest
+									each item in data.XRaychest
+										+item(item)
+										
+									.form__col-title.form__col-title-RL R L
+									each item in data.XRaychestRL
+										+item2(item)
+										
+									.form__col-title.form__col-title-pl Abdomen
+									each item in data.XRayabdomen
+										+item(item)
+										
+									.form__col-title.form__col-title-pl Head & Neck
+									each item in data.XRayheadNeck
+										+item(item)
+										
+								.form__col-20
+									.form__col-title.form__col-title-pn Upper Extremities
+									.form__col-title.form__col-title-RL R  L
+									each item in data.XRayupperExtremitiesRL
+										+item2(item)
+										
+									.form__labels-wrap
+										- for (var i=1; i<=5; i++) {
+											label.form__label.form__label-col(for= "finger"+i)
+												span.form__label-text= i
+												input.form__check(type="checkbox" name= "finger"+i id= "finger"+i)
+												.form__check-box
+										- }
+									img.form__img-hand(src="./images/hand.png", alt="hand")
+								.form__col-23
+									.form__col-title.form__col-title-pn Lower Extremities
+									.form__col-title.form__col-title-RL R  L
+									each item in data.XRaylowerExtremitiesRL
+										+item2(item)
+										
+									.form__labels-wrap
+										- for (var i=1; i<=5; i++) {
+											label.form__label.form__label-col(for= "toe"+i)
+												span.form__label-text= i
+												input.form__check(type="checkbox" name= "toe"+i id= "toe"+i)
+												.form__check-box
+										- }
+									img.form__img-foot(src="./images/foot.png", alt="foot")
+								.form__col-24
+									.form__col-title.form__col-title-pl Spine & Pelvis
+									each item in data.XRayspinePelvis
+										+item(item)
+										
+									.form__col-title.form__col-title-pl Skeletal Survey
+									each item in data.XRayskeletalSurvey
+										+item(item)
+										
+									label.form__label.form__label--box.form__label--other(for="other")
+										input.form__check(type="checkbox" name="other" id="other")
+										.form__check-box
+										span.form__label-text other:
+										textarea.form__textarea.form__textarea--other(name="other-text" id="other-text" cols="3" rows="5")
+					.form__col-25
+						fieldset.form__fieldset
+							legend.form__legend Musculoskeletal 
+							.form__col-title.form__col-title--notice by appointment only
+							.form__col-title.form__col-title--center Upper Extremities
+							.form__col-title.form__col-title-RL R  L
+							each item in data.MusculupperExtremitiesRL
+								+item2(item)
+									
+							.form__col-title.form__col-title--center lower Extremities
+							.form__col-title.form__col-title-RL R  L
+							each item in data.MuscullowerExtremitiesRL
+								+item2(item)
+									
+				.form__section
+					.form__col-56
+						fieldset.form__fieldset.form__fieldset--by
+							legend.form__legend Ultrasound -by appointment only
+							.form__row
+								.form__col-50
+									.form__col-title.form__col-title-pl General
+									each item in data.ultrasoundGeneral
+										+item(item)
+										
+								.form__col-50
+									.form__col-title.form__col-title-pl obstetrical
+									each item in data.ultrasoundObstetrical
+										+item(item)
+									.form__col-title.form__col-title-pl est. gestational age
+									.form__wrap-middle
+										.form__col-title breast
+										.form__label-wrap
+											label.form__label.form__label-inline(for="breast-R")
+												input.form__check(type="checkbox" name="breast-R" id="breast-R")
+												.form__check-box
+												span.form__label-text R
+											label.form__label.form__label-inline(for="breast-L")
+												input.form__check(type="checkbox" name="breast-L" id="breast-L")
+												.form__check-box
+												span.form__label-text L
+										img.form__img-breast(src="./images/breast.png", alt="foot")
+
+					.form__col-43
+						fieldset.form__fieldset.form__fieldset--vascular
+							legend.form__legend Vascular doppler -by appointment only
+							.form__row
+								.form__col-50
+									.form__col-title.form__col-title-pl Upper Extremity
+									each item in data.vascularUpperExtremity
+										+item(item)
+										
+								.form__col-50
+									.form__col-title.form__col-title-pl Lower Extremity
+									each item in data.vascularLowerExtremity
+										+item(item)
+										
+							label.form__label.form__label--box(for="consult")
+								input.form__check(type="checkbox" name="consult" id="consult")
+								.form__check-box
+								span.form__label-text.form__label-text--accent consult if abnormal vascular studies
+						.form__text-attention Child care is required during your examination.
+				.form__text-attention-italic This requisition form can be taken to any licensed facility providing healthcare services including hospitals and IHF's.																			

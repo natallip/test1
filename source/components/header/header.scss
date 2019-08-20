@@ -1,0 +1,58 @@
+.header { 
+  .container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-end;    
+  }
+  &__wrap {
+    width: 42%;
+    display: flex;
+    justify-content: space-between;    
+  }
+  &__logo {
+    width: 105px;
+    height: 105px;
+    margin-right: 50px;
+    margin-top: 5px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.info {
+  margin-top: 8px;
+  margin-right: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  &__phones {
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2.5px;    
+    padding: 3px 25px;
+    border-radius: 15px;
+  }
+  &__item {
+    line-height: 38px;
+    a {
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    span {
+      margin-right: 5px;
+    }
+  } 
+  &__mail {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 900;
+    margin-right: 4px; 
+    letter-spacing: 0.8px;   
+  }
+}
